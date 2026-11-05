@@ -1,0 +1,22 @@
+info:
+  name: POST-jogadores
+  type: http
+
+http:
+  method: POST
+  url: http://localhost:3000/jogadores
+  body:
+    type: json
+    data: |-
+      {
+          "nome": "Neymar Jr",
+          "email": "neymar@gmail.com",
+          "nickname": "neymar10"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
